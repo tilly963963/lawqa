@@ -9,7 +9,7 @@ ENV USER=nlpcat
 RUN echo create user $USER
 RUN useradd -s /bin/bash -m $USER
 
-CMD ["/app/entrypoint.sh"]
+# CMD ["/app/entrypoint.sh"]
 
 COPY --chown=$USER:$USER . /app
 
